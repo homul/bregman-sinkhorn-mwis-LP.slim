@@ -52,7 +52,7 @@ See `main.cpp` for a usage example.
 
 #### 1.1. Download Dependencies
 
-Download the [nlohmann/json](https://github.com/nlohmann/json/releases) library and place it into the `/external` folder.
+Download the [nlohmann/json](https://github.com/nlohmann/json/releases) library and place it into the `/external` folder. The latter must be created separately.
 Check the corresponding include path to `<nlohmann/json.hpp>` in your `CMakeLists.txt`.
 
 #### 1.2. Build the Project
@@ -77,9 +77,10 @@ Use the following command:
 #### Examples
 
 ```bash
-./main test.json 10 > output.txt
-./main test3.json 16 > output3.txt
+./main ../tests/test.json 10
+./main ../tests/test3.json 16
 ```
+The respective outputs in Relase mode can be found in  `../tests/output.txt` and `../tests/output3.txt`.
 
 ---
 
