@@ -1,0 +1,66 @@
+
+======Provide the problem to the solver =====================
+
+======Problem dimensions =====================
+Number of nodes in the original problem = 7
+Number of cliques = 6
+Number of nodes including slacks = 13
+
+======Run the dual solver ====================================
+[32mDual Solver for Max-Weight Independent Set Problem based on the Bregman-Sinkhorn smoothed dual coordinate descent.
+[31mNo primal heuristic[32m is computed, only dual updates and truncation projection to the feasible set of the LP relaxation.
+Randomized greedy solutions can be generated additionally.[0m
+
+# nodes = 13
+# cliques = 6
+# dual iterations per batch = 50
+max. # batches = 1000000
+integer primal interations starts only after reaching 0.1% relaxed duality gap
+
+min-max clique cost=1.38879e-11, threshold=1.38879e-19; x-coordinates to be ignored= 7.69231%
+average clique size=4; average reduced clique size=3 (75 %)
+
+Relaxed duality gap limit of 0.100000% not reached, primal heuristic skipped.
+
+it=50 d=0.92541603469848632 p=0.89999999999999991 gap=2.74644416624651599% p_relaxed=0.89999999999999991 gap_relaxed=2.74644416624651599% T=0.01000000000000000 
+Leading constant for thresholding =21.12649358651166054
+min-max clique cost=0.28224140405654907, threshold=0.00000000282241408; x-coordinates to be ignored= 30.76923179626464844%
+average clique size=4; average reduced clique size=2 (50.00000000000000000 %)
+
+Relaxed duality gap limit of 0.10000000000000001% not reached, primal heuristic skipped.
+
+it=100 d=0.91394091325616467 p=0.89999999999999991 gap=1.52536264149685952% p_relaxed=0.89999999999999991 gap_relaxed=1.52536264149685952% T=0.00558171163723174 
+Leading constant for thresholding =21.02143489907039964
+min-max clique cost=0.25357344746589661, threshold=0.00000000253573451; x-coordinates to be ignored= 30.76923179626464844%
+average clique size=4; average reduced clique size=2 (50.00000000000000000 %)
+
+Relaxed duality gap limit of 0.10000000000000001% not reached, primal heuristic skipped.
+
+it=150 d=0.90704257421982271 p=0.89999999999999991 gap=0.77643259754155924% p_relaxed=0.89999999999999991 gap_relaxed=0.77643259754155924% T=0.00282229492313231 
+Leading constant for thresholding =21.16206351673111286
+min-max clique cost=0.25002065300941467, threshold=0.00000000250020649; x-coordinates to be ignored= 53.84615707397460938%
+average clique size=4; average reduced clique size=2 (50.00000000000000000 %)
+
+Relaxed duality gap limit of 0.10000000000000001% not reached, primal heuristic skipped.
+
+it=200 d=0.90352149844068974 p=0.89999999999999991 gap=0.38975258992367995% p_relaxed=0.89999999999999991 gap_relaxed=0.38975258992367995% T=0.00141123556318521 
+Leading constant for thresholding =21.24448195452192323
+min-max clique cost=0.25000426173210144, threshold=0.00000000250004262; x-coordinates to be ignored= 53.84615707397460938%
+average clique size=4; average reduced clique size=2 (50.00000000000000000 %)
+
+Relaxed duality gap limit of 0.10000000000000001% not reached, primal heuristic skipped.
+
+it=250 d=0.90176077144244959 p=0.89999999999999991 gap=0.19525926367734603% p_relaxed=0.89999999999999991 gap_relaxed=0.19525926367734603% T=0.00070562678170049 
+Leading constant for thresholding =21.28595987187361160
+min-max clique cost=0.25000205636024475, threshold=0.00000000250002063; x-coordinates to be ignored= 53.84615707397460938%
+average clique size=4; average reduced clique size=2 (50.00000000000000000 %)
+
+Relaxed duality gap = 0.09772562597642889< 0.1%, dual optimization stopped.
+
+
+Final optimization results: primal relaxed=0.89999999999999991 dual bound=0.90088039100140493 duality gap=0.09772562597642889% 
+Total run-time of the dual solver 0.00143356100000000 seconds.
+
+======Generate greedy solutions ================================
+Generated 16 greedy solutions:
+{"solution-1":[1,3,5], "solution-2":[1,3,5], "solution-3":[1,3,5], "solution-4":[1,3,5], "solution-5":[1,3,5], "solution-6":[1,3,5], "solution-7":[3,6], "solution-8":[2,5], "solution-9":[1,3,5], "solution-10":[1,3,5], "solution-11":[1,3,5], "solution-12":[2,4,6], "solution-13":[1,3,5], "solution-14":[1,3,5], "solution-15":[2,4,6], "solution-16":[1,3,5]}

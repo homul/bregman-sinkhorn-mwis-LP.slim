@@ -1,0 +1,31 @@
+
+======Provide the problem to the solver =====================
+
+======Problem dimensions =====================
+Number of nodes in the original problem = 4
+Number of cliques = 2
+Number of nodes including slacks = 6
+
+======Run the dual solver ====================================
+[32mDual Solver for Max-Weight Independent Set Problem based on the Bregman-Sinkhorn smoothed dual coordinate descent.
+[31mNo primal heuristic[32m is computed, only dual updates and truncation projection to the feasible set of the LP relaxation.
+Randomized greedy solutions can be generated additionally.[0m
+
+# nodes = 6
+# cliques = 2
+# dual iterations per batch = 50
+max. # batches = 1000000
+integer primal interations starts only after reaching 0.1% relaxed duality gap
+
+min-max clique cost=1, threshold=1e-08; x-coordinates to be ignored= 66.6667%
+average clique size=4; average reduced clique size=1 (25 %)
+
+Relaxed duality gap = 0< 0.1%, dual optimization stopped.
+
+
+Final optimization results: primal relaxed=0.70000000000000007 dual bound=0.70000000000000007 duality gap=0% 
+Total run-time of the dual solver 0.00032314300000000002 seconds.
+
+======Generate greedy solutions ================================
+Generated 10 greedy solutions:
+{"solution-1":[2,3], "solution-2":[2,3], "solution-3":[2,3], "solution-4":[2,3], "solution-5":[2,3], "solution-6":[2,3], "solution-7":[2,3], "solution-8":[2,3], "solution-9":[2,3], "solution-10":[2,3]}
