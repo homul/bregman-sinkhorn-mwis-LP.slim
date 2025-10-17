@@ -461,12 +461,7 @@ protected:
     }
 
 #ifndef NDEBUG
-    if (!compute_feasibility(assignment))
-    {
-      result = infinity;
-      std::cerr << "Primal assignment is infeasible!" << std::endl;
-    }
-
+  assert(compute_feasibility(assignment));
 #endif
 
     return result;
