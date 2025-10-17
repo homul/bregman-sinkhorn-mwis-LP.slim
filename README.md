@@ -95,7 +95,7 @@ The respective outputs in Release mode can be found in  `../tests/output.txt` an
 2. The **precision** of solving the relaxed problem is controlled in `main.cpp` in the line containing the comment `"relative duality gap"`:
 
    ```cpp
-   solver.run(
+   solver.dualRun(
        50,          // batch size
        1000000,     // max number of batches
        0.1          // relative duality gap
