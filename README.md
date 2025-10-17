@@ -15,7 +15,9 @@ The **full code** used in the publication, along with other related data, is ava
 
 This is the **LP (non-ILP)** version used for **METAMIS comparison**, extracted from:
 
+
 ```
+https://www.stha.de/shares/mwis2024/mwis2024_code.tar.zst/
 mwis2024_code/integer/variant4-dualgap-heuristicspeedup-mindual=0.1-integer/
 ```
 
@@ -64,6 +66,8 @@ cmake -DCMAKE_BUILD_TYPE=Release ..
 cmake --build .
 ```
 
+Use `cmake -DCMAKE_BUILD_TYPE=Debug ..` for the Debug mode.
+
 ---
 
 ### 2. Run the Solver
@@ -80,7 +84,7 @@ Use the following command:
 ./main ../tests/test.json 10
 ./main ../tests/test3.json 16
 ```
-The respective outputs in Relase mode can be found in  `../tests/output.txt` and `../tests/output3.txt`.
+The respective outputs in Release mode can be found in  `../tests/output.txt` and `../tests/output3.txt`.
 
 ---
 
