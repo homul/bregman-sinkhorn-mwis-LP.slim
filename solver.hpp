@@ -191,7 +191,7 @@ public:
     const std::string blue ="\033[34m";
     const std::string green ="\033[32m";
     const std::string reset = "\033[0m"; // Reset to default color
-    assert(finalized());
+    assert(finalized_graph_);
 
     std::cout << green 
               << "Dual Solver for Max-Weight Independent Set Problem based on the Bregman-Sinkhorn smoothed dual coordinate descent." << std::endl
@@ -253,11 +253,10 @@ public:
       //t_dual.stop();
 
       if (gap_relaxed < min_duality_gap) {
-        std::cout << "Relaxed duality gap = "<< gap_relaxed << "< 0.1%, dual optimization stopped."<< std::endl;
+        std::cout << "Relaxed duality gap = "<< gap_relaxed << "<" << min_duality_gap <<"%, dual optimization stopped."<< std::endl;
         break; 
-        // OUTPUT greedy solutions in JSON format: end ===============================
       } else {
-        std::cout << "Relaxed duality gap limit of "<< std::fixed << min_duality_gap<< "% not reached, primal heuristic skipped." << std::endl;
+        std::cout << "Relaxed duality gap limit of "<< std::fixed << min_duality_gap<< "% not reached, dual optimization continues." << std::endl;
       }
 
       iterations_ += batch_size;
@@ -277,8 +276,6 @@ public:
                 << "gap_relaxed=" << gap_relaxed << "% "
                 << "T=" << temperature_ << " "
                 << std::endl;
-
-      std::cout << "Leading constant for thresholding =" << gap_relaxed/temperature_/no_nodes() << std::endl;
 
       // Now, we can update temperature (uses costs_ and primal projection result).
       update_temperature();

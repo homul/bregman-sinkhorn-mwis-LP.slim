@@ -4,7 +4,7 @@
 #include <string>
 #include <chrono>   //for time measurements
 #include <nlohmann/json.hpp>
-#include "solver_cont_temp.hpp"
+#include "solver.hpp"
 
 
   template <typename RandomIt>
